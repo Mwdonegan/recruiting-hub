@@ -1,27 +1,103 @@
 {
-  "profile": {
-    "name": "Autumn Profile",
-    "created_date": "2026-06-04",
-    "version": "1.0",
-    "description": "Sample profile data for recruiting hub"
+  "identity": {
+    "name": "Autumn Donegan",
+    "gradYear": "2027",
+    "highSchool": "Montclair High School",
+    "city": "Montclair",
+    "state": "NJ",
+    "primaryPosition": "Striker",
+    "secondaryPosition": "",
+    "clubTeams": [
+      "PSA North U17 (Princeton Soccer Academy North) girls 2008",
+      "Cedar Stars GA girls 2008"
+    ],
+    "jerseyNumber": ""
   },
-  "candidates": [
-    {
-      "id": 1,
-      "name": "Sample Candidate",
-      "email": "candidate@example.com",
-      "position": "Software Engineer",
-      "status": "Pending",
-      "date_applied": "2026-06-01"
-    }
-  ],
-  "positions": [
-    {
-      "id": 1,
-      "title": "Software Engineer",
-      "department": "Engineering",
-      "status": "Open",
-      "posted_date": "2026-05-15"
-    }
-  ]
+  "soccer": {
+    "bio": "ECNL All-Regional striker with 3 years of varsity experience, dual-sport athlete in track, and strong acceleration and finishing ability.",
+    "strengths": [
+      "Runs behind the defense",
+      "Finishing with both feet",
+      "Hold-up play and link-up",
+      "Pressing and counterpressing",
+      "Top-end speed and separation",
+      "Showcase-tested against elite competition"
+    ],
+    "honors": [
+      "ECNL All-Regional Girls Northeast",
+      "Varsity starter for 3 years",
+      "Dual athlete in track and soccer"
+    ],
+    "showcases": [
+      "ECNL / EDP",
+      "Jefferson Cup Showcase",
+      "EDP Fall Showcase",
+      "Girls Showcase Raleigh (NC)",
+      "Penn Fusion College Showcase",
+      "Jeff Cup College Showcase",
+      "PDA Showcase"
+    ],
+    "offerStatus": "Offer from Muhlenberg College (D3), not preferred. Seeking D1/D2 options.",
+    "highlightReel": "",
+    "fullGameFilm": []
+  },
+  "track": {
+    "events": {
+      "200m": "26.97",
+      "55m": "7.72"
+    },
+    "rankings": {
+      "200mNorthI": "9th",
+      "200mGroupIV": "22nd",
+      "200mNJ": "79th",
+      "200mUS": "3,247th",
+      "55mNorthI": "18th",
+      "55mGroupIV": "54th",
+      "55mNJ": "150th",
+      "55mUS": "1,568th"
+    },
+    "notes": "Speed translates to soccer through acceleration, separation on runs behind defenders, recovery runs, pressing intensity, and transition threat."
+  },
+  "academics": {
+    "gpa": "3.5+",
+    "courses": [
+      "High Honors",
+      "AP courses",
+      "MADE Program next year (college coursework at Montclair State)",
+      "NAACP Juniors Program membership"
+    ],
+    "majorInterest": "",
+    "testScores": ""
+  },
+  "recruiting": {
+    "dreamSchools": [
+      "Howard University",
+      "University of Miami",
+      "Temple University",
+      "University of Pennsylvania",
+      "Brown University",
+      "Columbia University",
+      "UCLA",
+      "USC",
+      "Northwestern University",
+      "Northeastern University",
+      "Florida State University",
+      "University of Louisiana Monroe (ULM)",
+      "Louisiana State University (LSU)",
+      "Penn State University",
+      "University of Tampa",
+      "Tulane University",
+      "University of Maryland"
+    ],
+    "coachContacts": [],
+    "communicationLog": [],
+    "campInvites": [],
+    "followUps": []
+  },
+  "contact": {
+    "athleteEmail": "",
+    "athletePhone": "",
+    "parentContact": "",
+    "coachContact": ""
+  }
 }
