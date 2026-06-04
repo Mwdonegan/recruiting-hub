@@ -1,0 +1,27 @@
+{
+  "profile": {
+    "name": "Autumn Profile",
+    "created_date": "2026-06-04",
+    "version": "1.0",
+    "description": "Sample profile data for recruiting hub"
+  },
+  "candidates": [
+    {
+      "id": 1,
+      "name": "Sample Candidate",
+      "email": "candidate@example.com",
+      "position": "Software Engineer",
+      "status": "Pending",
+      "date_applied": "2026-06-01"
+    }
+  ],
+  "positions": [
+    {
+      "id": 1,
+      "title": "Software Engineer",
+      "department": "Engineering",
+      "status": "Open",
+      "posted_date": "2026-05-15"
+    }
+  ]
+}
