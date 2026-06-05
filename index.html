@@ -28,7 +28,7 @@
             opacity: 0.9;
         }
         main {
-            max-width: 900px;
+            max-width: 980px;
             margin: 20px auto;
             padding: 0 16px;
         }
@@ -46,6 +46,11 @@
         .grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .triple {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 16px;
         }
         .card {
@@ -75,15 +80,18 @@
         .muted {
             color: #6b7280;
         }
-        .pill {
-            display: inline-block;
-            background: #eff6ff;
-            color: #1e3a8a;
-            padding: 4px 8px;
-            border-radius: 999px;
-            font-size: 12px;
-            margin: 0 6px 6px 0;
-            border: 1px solid #dbeafe;
+        .headshot {
+            width: 100%;
+            max-width: 260px;
+            border-radius: 12px;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .actionshot {
+            width: 100%;
+            border-radius: 12px;
+            display: block;
+            margin-bottom: 12px;
         }
         footer {
             text-align: center;
@@ -91,8 +99,8 @@
             font-size: 13px;
             padding: 16px;
         }
-        @media (max-width: 600px) {
-            .grid {
+        @media (max-width: 700px) {
+            .grid, .triple {
                 grid-template-columns: 1fr;
             }
         }
@@ -101,16 +109,27 @@
 <body>
     <header>
         <h1>Autumn Donegan</h1>
-        <p>Class of 2027 • Striker • Montclair High School, NJ</p>
+        <p>Class of 2027 • Striker / Outside Winger • Montclair High School, NJ</p>
         <p class="muted">5'9" • 145 lbs • ECNL All-Regional • National Honor Society • Varsity Starter • Dual Athlete (Soccer + Track)</p>
     </header>
 
     <main>
         <section>
-            <h2>Player Snapshot</h2>
+            <h2>Player Bio</h2>
             <div class="grid">
                 <div class="card">
-                    <p><strong>Position:</strong> Striker</p>
+                    <img src="assets/images/autumn-donegan-profile.jpg" alt="Autumn Donegan headshot" class="headshot">
+                    <p>
+                        Autumn Donegan is a Class of 2027 striker and outside winger from Montclair High School in New Jersey.
+                        She has played soccer since age 4 and competes for PSA North and Cedar Stars. Autumn is committed to competing
+                        at the highest level while maintaining strong academic standards through honors and AP coursework.
+                    </p>
+                    <p>
+                        She hopes to bring pace, creativity, goal-scoring ability, and a positive presence to a college program.
+                    </p>
+                </div>
+                <div class="card">
+                    <p><strong>Position:</strong> Striker / Outside Winger</p>
                     <p><strong>High School:</strong> Montclair High School</p>
                     <p><strong>Club Teams:</strong></p>
                     <ul>
@@ -118,36 +137,56 @@
                         <li>Cedar Stars GA girls 2008</li>
                     </ul>
                     <p><strong>Academics:</strong> 3.5+ GPA, AP / High Honors, MADE Program, National Honor Society</p>
+                    <p><strong>Academic Interests:</strong> [Insert intended major or field]</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Photos</h2>
+            <div class="triple">
+                <div class="card">
+                    <img src="assets/images/autumn-donegan-profile.jpg" alt="Autumn Donegan headshot" class="actionshot">
+                    <p class="muted">Headshot</p>
                 </div>
                 <div class="card">
-                    <p><strong>Honors:</strong></p>
+                    <img src="assets/images/Autumn-striker-action-shot.jpg" alt="Autumn Donegan action shot" class="actionshot">
+                    <p class="muted">Action Shot 1</p>
+                </div>
+                <div class="card">
+                    <img src="assets/images/Autumn_Barret.jpg" alt="Autumn Donegan action shot" class="actionshot">
+                    <p class="muted">Action Shot 2</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Awards & Leadership</h2>
+            <div class="grid">
+                <div class="card">
+                    <ul>
+                        <li>CSJ (Center for Social Justice)</li>
+                        <li>BSU (Black Student Union)</li>
+                        <li>MHS Girls Soccer Freshman MVP Award</li>
+                    </ul>
+                </div>
+                <div class="card">
                     <ul>
                         <li>ECNL All-Regional Girls Northeast</li>
                         <li>Varsity starter for 3 years</li>
                         <li>Dual athlete in soccer and track</li>
                         <li>National Honor Society</li>
                     </ul>
-                    <p class="muted">
-                        Currently seeking D1/D2 opportunities that match my goals for soccer and academics.
-                    </p>
                 </div>
             </div>
         </section>
 
         <section>
             <h2>Key Strengths</h2>
-            <p>
-                <strong>Pace:</strong> Elite speed and acceleration for a striker.
-            </p>
-            <p>
-                <strong>Goal-Scoring Ability:</strong> Consistent scorer with both feet and strong finishing under pressure.
-            </p>
-            <p>
-                <strong>Playmaking:</strong> Creates chances for teammates with vision and passing.
-            </p>
-            <p class="muted">
-                Autumn is often double-teamed and heavily pressured, so her stats do not fully reflect her ability and impact.
-            </p>
+            <p><strong>Pace:</strong> Elite speed and acceleration for a striker.</p>
+            <p><strong>Goal-Scoring Ability:</strong> Consistent scorer with both feet and strong finishing under pressure.</p>
+            <p><strong>Playmaking:</strong> Creates chances for teammates with vision and passing.</p>
+            <p class="muted">Autumn is often double-teamed and heavily pressured, so her stats do not fully reflect her ability and impact.</p>
         </section>
 
         <section>
@@ -162,19 +201,52 @@
                     <p><strong>55m Rank:</strong> 18th in North I</p>
                 </div>
             </div>
-            <p class="muted">
-                Speed translates to soccer through acceleration, runs behind defenders, separation, pressing, and recovery pace.
-            </p>
+            <p class="muted">Speed translates to soccer through acceleration, runs behind defenders, separation, pressing, and recovery pace.</p>
         </section>
 
         <section>
-            <h2>Recruiting Profiles</h2>
-            <p>
-                View Autumn’s full recruiting profile on NCSA:
-            </p>
+            <h2>Recruiting Profiles & Video</h2>
+            <p>View Autumn's full recruiting profile on NCSA and watch her full game film:</p>
             <a href="https://www.ncsasports.org/womens-soccer-recruiting/new-jersey/montclair/montclair-high-school2/autumn-donegan" class="btn" target="_blank">NCSA Recruiting Profile</a>
             <a href="https://www.youtube.com/live/EwggNcZbq90?si=02bicFEGLF_La1m8" class="btn secondary">Full Game Film</a>
             <a href="#" class="btn secondary">Highlight Reel in Progress</a>
+        </section>
+
+        <section>
+            <h2>Upcoming Events</h2>
+            <p>Autumn will be competing at the following showcases:</p>
+            <ul>
+                <li>Jefferson Cup College Showcase — [Date] — [Location] — PSA North U17</li>
+                <li>Penn Fusion College Showcase — [Date] — [Location]</li>
+                <li>PDA Showcase — [Date] — [Location]</li>
+                <li>EDP Fall Showcase — [Date] — [Location]</li>
+            </ul>
+            <p class="muted">Jersey number: [Insert when known]</p>
+        </section>
+
+        <section>
+            <h2>Contact Information</h2>
+            <div class="grid">
+                <div class="card">
+                    <p><strong>Autumn Donegan</strong></p>
+                    <p>Email: [Insert email]</p>
+                    <p>Phone: [Insert phone]</p>
+                </div>
+                <div class="card">
+                    <p><strong>Club Coach — PSA North</strong></p>
+                    <p>Lucas Loya: <a href="mailto:lloya@princetonsocceracademy.com">lloya@princetonsocceracademy.com</a></p>
+                    <p>Dennis Ulloa: <a href="mailto:dulloa@princetonsocceracademy.com">dulloa@princetonsocceracademy.com</a></p>
+                </div>
+                <div class="card">
+                    <p><strong>Club Coach — Cedar Stars Academy</strong></p>
+                    <p>Alex Rebeiz: <a href="mailto:Alex.Rebeiz@cedarstars.com">Alex.Rebeiz@cedarstars.com</a></p>
+                </div>
+                <div class="card">
+                    <p><strong>High School Coach — Montclair HS</strong></p>
+                    <p>Ashley Hammond: <a href="mailto:ashley@cpsoccer.us">ashley@cpsoccer.us</a></p>
+                    <p>Rob McOmish: <a href="mailto:rmcomish@montclair.k12.nj.us">rmcomish@montclair.k12.nj.us</a></p>
+                </div>
+            </div>
         </section>
 
         <section>
@@ -199,25 +271,13 @@
                 <li>Tulane University</li>
                 <li>University of Maryland</li>
             </ul>
-            <p class="muted">
-                This is not an exclusive list. I am open to evaluating other programs that fit my goals for D1/D2 soccer and academics.
-            </p>
-        </section>
-
-        <section>
-            <h2>Recruiting Tracker</h2>
-            <p>View and manage Autumn's recruiting progress with schools and coaches.</p>
-            <a href="https://docs.google.com/spreadsheets/d/1IDxwt50gd_GG0uNtLFRGzg4N_E8fwpqXhgB4X5pnfuk/edit?usp=sharing" class="btn">Open Recruiting Tracker</a>
+            <p class="muted">This is not an exclusive list. I am open to evaluating other programs that fit my goals for D1/D2 soccer and academics.</p>
         </section>
 
         <section>
             <h2>Why This Matters</h2>
-            <p>
-                Autumn already has the level, the academics, and the honors. This packet makes it easy for coaches to see her value quickly and respond.
-            </p>
-            <p class="muted">
-                Recruiting rewards players who are early, organized, and easy to evaluate.
-            </p>
+            <p>Autumn already has the level, the academics, and the honors. This packet makes it easy for coaches to see her value quickly and respond.</p>
+            <p class="muted">Recruiting rewards players who are early, organized, and easy to evaluate.</p>
         </section>
     </main>
 
